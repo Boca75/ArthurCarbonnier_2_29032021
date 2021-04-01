@@ -1,0 +1,10 @@
+exemple {
+    display: none;
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: grid;
+    grid-template-areas: xxxxxx;
+    position: relative;
+    position: absolute;
+}
