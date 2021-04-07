@@ -1,10 +1,106 @@
-exemple {
-    display: none;
-    display: block;
-    display: inline;
+nav a {
     display: inline-block;
-    display: grid;
-    grid-template-areas: xxxxxx;
+}
+
+.hébergements {
+    position:absolute;
+    right:200px;
+}
+
+/*demander pour la position absolue*/
+
+.activités {
+    position:absolute;
+    right:100px;
+}
+
+.inscription {
+    position:absolute;
+    right:0px;
+}
+
+/*fin du header */
+
+main {
+    position:relative;
+    left:0px;
+}
+
+main h1 {
     position: relative;
-    position: absolute;
+    left:0px;
+}
+
+main h2 {
+    position: relative;
+    left:0px;
+}
+
+form {
+    position:relative;
+    left:0px;
+}
+
+#Filtres {
+    display:inline-block
+}
+
+.filtres {
+    position:absolute;
+    left:0px;
+}
+
+.Économique {
+    position:relative;
+    left:150px;
+}
+
+.Familial {
+    position:relative;
+    left:300px;
+}
+
+.Romantique {
+    position:relative;
+    left:450px;
+}
+
+.Animaux {
+    position:relative;
+    left:600px;
+}
+
+.texteinfo {
+    position:relative;
+    left:0px;
+}
+
+#accomodations {
+    width:75%;  
+    position:relative;
+    left:0px;
+}
+
+aside {
+    display:inline-block;
+    width:25%;
+    position:relative;
+    right:0px;
+}
+/* demander si le float est autorisé, si non quels alternatives ? */
+
+#activities {
+    position:relative;
+    left:0px;
+}
+/* fin du main */
+
+footer {
+    display:inline-block;
+    position:relative;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+@media all and (max-device-width: 480px)
 }

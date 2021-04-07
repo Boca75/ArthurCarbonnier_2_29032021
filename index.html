@@ -3,7 +3,7 @@
     <head>
         <title>Reservia</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap"
             rel="stylesheet"
@@ -21,11 +21,12 @@
     </head>
 
     <body>
-        <header style="background-color: aquamarine">
+        <header style="background-color: rgb(255, 127, 238)">
             <nav style="background-color: rgb(199, 124, 124)">
                 <a
                     style="background-color: rgb(189, 218, 111)"
                     href="index.html"
+                    id="logo"
                 >
                     <img
                         src="images\logo\Reservia@3x.png"
@@ -35,46 +36,75 @@
                 <a
                     style="background-color: rgb(144, 93, 192)"
                     href="#accomodations"
+                    class="hébergements"
                     >Hébergements</a
                 >
                 <a
                     style="background-color: rgb(115, 121, 204)"
                     href="#activities"
+                    class="activités"
                     >Activités</a
                 >
-                <a style="background-color: rgb(194, 71, 91)" href="#"
+                <a
+                    style="background-color: rgb(194, 71, 91)"
+                    href="#"
+                    class="inscription"
                     >S'inscrire</a
                 >
             </nav>
         </header>
 
         <main style="background-color: greenyellow">
-            <h1>Trouvez votre hébergement pour des vacances de réve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
-            <form>
-                <div>
+            <h1 style="background-color: darkred">
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <h2 style="background-color: deeppink">
+                En plein centre ville ou en pleine nature
+            </h2>
+            <form style="background-color: firebrick">
+                <div style="background-color: gold">
                     <i class="fas fa-map-marker"></i>
                     <input type="search" placeholder="Marseille, France" />
                     <button>Rechercher</button>
                 </div>
-                <p>Filtres</p>
+                <div style="background-color: darkblue" id="Filtres">
+                    <p style="background-color: forestgreen" class="filtres">
+                        Filtres
+                    </p>
 
-                <button>
-                    <i class="fas fa-money-bill-wave"></i>Économique
-                </button>
+                    <button style="background-color: indigo" class="Économique">
+                        <i class="fas fa-money-bill-wave"></i>Économique
+                    </button>
 
-                <button><i class="fas fa-child"></i>Familial</button>
+                    <button
+                        style="background-color: mediumturquoise"
+                        class="Familial"
+                    >
+                        <i class="fas fa-child"></i>Familial
+                    </button>
 
-                <button><i class="fas fa-heart"></i>Romantique</button>
+                    <button
+                        style="background-color: firebrick"
+                        class="Romantique"
+                    >
+                        <i class="fas fa-heart"></i>Romantique
+                    </button>
 
-                <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+                    <button
+                        style="background-color: rgb(118, 207, 118)"
+                        class="Animaux"
+                    >
+                        <i class="fas fa-dog"></i>Animaux autorisés
+                    </button>
+                </div>
             </form>
 
-            <p>
+            <p style="background-color: crimson" class="texteinfo">
                 <i class="fas fa-info"></i>
                 Plus de 500 logements sont disponibles dans cette ville
             </p>
-            <section>
+
+            <section style="background-color: gray" id="accomodations">
                 <h1>Hébergement à Marseille</h1>
 
                 <a href="">
@@ -185,7 +215,7 @@
                 </a>
             </aside>
 
-            <section>
+            <section style="background-color: darkred" class="activities">
                 <h1>Activités à Marseille</h1>
 
                 <a href="">
@@ -245,9 +275,9 @@
             </section>
         </main>
 
-        <footer>
+        <footer style="background-color: darkviolet">
             <h2>A propos</h2>
-            <nav>
+            <nav style="background-color: darkgreen">
                 <ul>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
@@ -256,7 +286,7 @@
             </nav>
 
             <h2>Nos hébergements</h2>
-            <nav>
+            <nav style="background-color: darkorange">
                 <ul>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
@@ -264,7 +294,7 @@
             </nav>
 
             <h2>Assistance</h2>
-            <nav>
+            <nav style="background-color: indigo">
                 <ul>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
