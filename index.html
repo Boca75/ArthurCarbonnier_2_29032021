@@ -8,10 +8,7 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        />
+
         <link rel="stylesheet" href="css/normalizer.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script
@@ -22,11 +19,11 @@
 
     <body>
         <header style="background-color: rgb(255, 127, 238)">
-            <nav style="background-color: rgb(199, 124, 124)">
+            <nav class="nav" style="background-color: rgb(199, 124, 124)">
                 <a
                     style="background-color: rgb(189, 218, 111)"
                     href="index.html"
-                    id="logo"
+                    class="nav-logo"
                 >
                     <img
                         src="images\logo\Reservia@3x.png"
@@ -36,19 +33,19 @@
                 <a
                     style="background-color: rgb(144, 93, 192)"
                     href="#accomodations"
-                    class="hébergements"
+                    class="nav-accomodations"
                     >Hébergements</a
                 >
                 <a
                     style="background-color: rgb(115, 121, 204)"
                     href="#activities"
-                    class="activités"
+                    class="nav-activities"
                     >Activités</a
                 >
                 <a
                     style="background-color: rgb(194, 71, 91)"
                     href="#"
-                    class="inscription"
+                    class="nav-register"
                     >S'inscrire</a
                 >
             </nav>
@@ -67,36 +64,32 @@
                     <input type="search" placeholder="Marseille, France" />
                     <button>Rechercher</button>
                 </div>
-                <div style="background-color: darkblue" id="Filtres">
-                    <p style="background-color: forestgreen" class="filtres">
-                        Filtres
-                    </p>
 
-                    <button style="background-color: indigo" class="Économique">
-                        <i class="fas fa-money-bill-wave"></i>Économique
-                    </button>
+                <p style="background-color: forestgreen" class="filtres">
+                    Filtres
+                </p>
 
-                    <button
-                        style="background-color: mediumturquoise"
-                        class="Familial"
-                    >
-                        <i class="fas fa-child"></i>Familial
-                    </button>
+                <button style="background-color: indigo" class="Économique">
+                    <i class="fas fa-money-bill-wave"></i>Économique
+                </button>
 
-                    <button
-                        style="background-color: firebrick"
-                        class="Romantique"
-                    >
-                        <i class="fas fa-heart"></i>Romantique
-                    </button>
+                <button
+                    style="background-color: mediumturquoise"
+                    class="Familial"
+                >
+                    <i class="fas fa-child"></i>Familial
+                </button>
 
-                    <button
-                        style="background-color: rgb(118, 207, 118)"
-                        class="Animaux"
-                    >
-                        <i class="fas fa-dog"></i>Animaux autorisés
-                    </button>
-                </div>
+                <button style="background-color: firebrick" class="Romantique">
+                    <i class="fas fa-heart"></i>Romantique
+                </button>
+
+                <button
+                    style="background-color: rgb(118, 207, 118)"
+                    class="Animaux"
+                >
+                    <i class="fas fa-dog"></i>Animaux autorisés
+                </button>
             </form>
 
             <p style="background-color: crimson" class="texteinfo">
@@ -105,20 +98,25 @@
             </p>
 
             <section style="background-color: gray" id="accomodations">
-                <h1>Hébergement à Marseille</h1>
-
-                <a href="">
+                <header>
+                    <h1>Hébergement à Marseille</h1>
+                </header>
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Auberge La Cannebière"
                         />
                         <figcaption>
-                            Auberge la Cannebière Nuit à partir de 25€
+                            <h2>Auberge de la Cannebière</h2>
+                            <p>Nuit à partir de 25€</p>
+                            <div>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -129,7 +127,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -140,7 +138,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -151,7 +149,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -162,7 +160,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -176,10 +174,13 @@
                 <a href="#">Afficher plus</a>
             </section>
 
-            <aside>
-                <h1>Les plus populaires</h1>
+            <section>
+                <header>
+                    <h1>Les plus populaires</h1>
+                    <i></i>
+                </header>
 
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -202,7 +203,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -213,12 +214,12 @@
                         </figcaption>
                     </figure>
                 </a>
-            </aside>
+            </section>
 
-            <section style="background-color: darkred" class="activities">
+            <aside style="background-color: darkred" class="activities">
                 <h1>Activités à Marseille</h1>
 
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -227,7 +228,7 @@
                         <figcaption>Vieux Port</figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -236,7 +237,7 @@
                         <figcaption>Fort de Pomègues</figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -245,7 +246,7 @@
                         <figcaption>Îles du Frioul</figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -254,7 +255,7 @@
                         <figcaption>Parc National des Calanques</figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -263,7 +264,7 @@
                         <figcaption>Notre-Dame-de-la-Garde</figcaption>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <img
                             src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -272,12 +273,14 @@
                         <figcaption>Parc Longchamp</figcaption>
                     </figure>
                 </a>
-            </section>
+            </aside>
         </main>
 
         <footer style="background-color: darkviolet">
-            <h2>A propos</h2>
-            <nav style="background-color: darkgreen">
+            <h2 style="background-color: fuchsia" class="titre_a_propos">
+                A propos
+            </h2>
+            <nav style="background-color: darkgreen" class="a_propos">
                 <ul>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
@@ -285,16 +288,20 @@
                 </ul>
             </nav>
 
-            <h2>Nos hébergements</h2>
-            <nav style="background-color: darkorange">
+            <h2 style="background-color: green" class="titre_nos_hébergements">
+                Nos hébergements
+            </h2>
+            <nav style="background-color: darkorange" class="nos_hébergements">
                 <ul>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
                 </ul>
             </nav>
 
-            <h2>Assistance</h2>
-            <nav style="background-color: indigo">
+            <h2 style="background-color: orange" class="titre_assistance">
+                Assistance
+            </h2>
+            <nav style="background-color: indigo" class="assistance">
                 <ul>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
