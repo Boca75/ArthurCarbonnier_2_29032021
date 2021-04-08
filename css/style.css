@@ -1,106 +1,65 @@
-nav a {
-    display: inline-block;
+:root {
+    font-size: 10px;
 }
 
-.hébergements {
-    position:absolute;
-    right:200px;
-}
+@media all and (max-device-width: 480px) {
+    .nav-logo {
+        grid-area: nav-logo;
+    }
 
-/*demander pour la position absolue*/
+    .nav-accomodations {
+        grid-area: nav-accomodations;
+    }
 
-.activités {
-    position:absolute;
-    right:100px;
-}
+    .nav-activities {
+        grid-area: nav-activities;
+    }
 
-.inscription {
-    position:absolute;
-    right:0px;
-}
+    .nav-register {
+        grid-area: nav-register;
+    }
 
-/*fin du header */
+    .nav {
+        display: grid;
+        grid-template-areas:
+            "nav-logo nav-register"
+            "nav-accomodations nav-activities";
+    }
 
-main {
-    position:relative;
-    left:0px;
-}
+    #main-header {
+        grid-area: main-header;
+    }
 
-main h1 {
-    position: relative;
-    left:0px;
-}
+    #popular {
+        grid-area: popular;
+    }
 
-main h2 {
-    position: relative;
-    left:0px;
-}
+    #accomodations {
+        grid-area: accomodations;
+    }
 
-form {
-    position:relative;
-    left:0px;
-}
+    #activities {
+        grid-area: activities;
+    }
 
-#Filtres {
-    display:inline-block
-}
+    main {
+        display: grid;
+        grid-template-areas:
+            "main-header"
+            "popular"
+            "accomodations"
+            "activities";
+    }
 
-.filtres {
-    position:absolute;
-    left:0px;
-}
+    .search {
+        display: none;
+    }
 
-.Économique {
-    position:relative;
-    left:150px;
-}
+    .romantique {
+        display: block;
+    }
 
-.Familial {
-    position:relative;
-    left:300px;
-}
-
-.Romantique {
-    position:relative;
-    left:450px;
-}
-
-.Animaux {
-    position:relative;
-    left:600px;
-}
-
-.texteinfo {
-    position:relative;
-    left:0px;
-}
-
-#accomodations {
-    width:75%;  
-    position:relative;
-    left:0px;
-}
-
-aside {
-    display:inline-block;
-    width:25%;
-    position:relative;
-    right:0px;
-}
-/* demander si le float est autorisé, si non quels alternatives ? */
-
-#activities {
-    position:relative;
-    left:0px;
-}
-/* fin du main */
-
-footer {
-    display:inline-block;
-    position:relative;
-    left:0px;
-    width:100%;
-    height:100%;
-}
-@media all and (max-device-width: 480px)
+    .popular-title {
+        display: inline-block;
+    }
 }
