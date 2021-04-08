@@ -52,50 +52,57 @@
         </header>
 
         <main style="background-color: greenyellow">
-            <h1 style="background-color: darkred">
-                Trouvez votre hébergement pour des vacances de rêve
-            </h1>
-            <h2 style="background-color: deeppink">
-                En plein centre ville ou en pleine nature
-            </h2>
-            <form style="background-color: firebrick">
-                <div style="background-color: gold">
-                    <i class="fas fa-map-marker"></i>
-                    <input type="search" placeholder="Marseille, France" />
-                    <button><i class="fas fa-search"></i>Rechercher</button>
-                </div>
+            <header id="main-header">
+                <h1 style="background-color: darkred">
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h1>
+                <h2 style="background-color: deeppink">
+                    En plein centre ville ou en pleine nature
+                </h2>
+                <form style="background-color: firebrick">
+                    <div style="background-color: gold">
+                        <i class="fas fa-map-marker"></i>
+                        <input type="search" placeholder="Marseille, France" />
+                        <button>
+                            <i class="fas fa-search"></i>
+                            <div class="search">Rechercher</div>
+                        </button>
+                    </div>
 
-                <p style="background-color: forestgreen" class="filtres">
-                    Filtres
-                </p>
+                    <p style="background-color: forestgreen" class="filtres">
+                        Filtres
+                    </p>
 
-                <button style="background-color: indigo" class="Économique">
-                    <i class="fas fa-money-bill-wave"></i>Économique
-                </button>
+                    <button style="background-color: indigo" class="économique">
+                        <i class="fas fa-money-bill-wave"></i>Économique
+                    </button>
 
-                <button
-                    style="background-color: mediumturquoise"
-                    class="Familial"
-                >
-                    <i class="fas fa-child"></i>Familial
-                </button>
+                    <button
+                        style="background-color: mediumturquoise"
+                        class="familial"
+                    >
+                        <i class="fas fa-child"></i>Familial
+                    </button>
 
-                <button style="background-color: firebrick" class="Romantique">
-                    <i class="fas fa-heart"></i>Romantique
-                </button>
+                    <button
+                        style="background-color: firebrick"
+                        class="romantique"
+                    >
+                        <i class="fas fa-heart"></i>Romantique
+                    </button>
 
-                <button
-                    style="background-color: rgb(118, 207, 118)"
-                    class="Animaux"
-                >
-                    <i class="fas fa-dog"></i>Animaux autorisés
-                </button>
-            </form>
-
-            <p style="background-color: crimson" class="texteinfo">
-                <i class="fas fa-info"></i>
-                Plus de 500 logements sont disponibles dans cette ville
-            </p>
+                    <button
+                        style="background-color: rgb(118, 207, 118)"
+                        class="animaux"
+                    >
+                        <i class="fas fa-dog"></i>Animaux autorisés
+                    </button>
+                    <p style="background-color: crimson" class="texteinfo">
+                        <i class="fas fa-info"></i>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </form>
+            </header>
 
             <section style="background-color: gray" id="accomodations">
                 <header>
@@ -218,7 +225,7 @@
                 <a href="#">Afficher plus</a>
             </section>
 
-            <section>
+            <section style="background-color: coral" id="popular">
                 <header>
                     <h1>Les plus populaires</h1>
                     <i class="fas fa-chart-line"></i>
@@ -283,7 +290,7 @@
                 </a>
             </section>
 
-            <aside style="background-color: darkred" class="activities">
+            <aside style="background-color: darkred" id="activities">
                 <h1>Activités à Marseille</h1>
 
                 <a href="#">
