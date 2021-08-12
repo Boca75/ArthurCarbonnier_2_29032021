@@ -1,3 +1,75 @@
-body {
-    background-color: red;
+.main-header-form-div {
+    width: 50%;
+}
+
+#popular {
+    grid-area: popular;
+    display: grid;
+    grid-template-areas:
+        "popular-header popular-header"
+        "popular-link1 popular-link2"
+        "popular-link3 popular-link2";
+    grid-gap: 10px;
+    padding: 20px 20px 40px 20px;
+    grid-template-rows: auto repeat(2, 140px);
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+}
+
+.popular-fig2 {
+    display: block !important;
+}
+
+.popular-fig-img2 {
+    height: calc(100% - 100px);
+    width: 100%;
+}
+
+.popular-figcaption2 {
+    height: 100px;
+    width: 100%;
+}
+
+#accomodations {
+    grid-area: accomodations;
+    display: grid;
+    grid-template-areas:
+        "accomodations-header accomodations-header"
+        "accomodations-link1 accomodations-link2"
+        "accomodations-link3 accomodations-link4"
+        "accomodations-link5 accomodations-link6"
+        "accomodations-link7 accomodations-link7";
+    grid-gap: 20px;
+    grid-template-rows: auto repeat(3, 195px);
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+#activities {
+    grid-area: activities;
+    display: grid;
+    grid-template-areas:
+        "activities-header activities-header"
+        "activities-link1 activities-link2"
+        "activities-link3 activities-link4"
+        "activities-link5 activities-link6";
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-rows: auto repeat(3, 220px);
+    grid-template-columns: 1fr 1fr;
+}
+
+.activities-figcaption {
+    text-align: center;
+}
+
+#footer {
+    display: grid;
+    grid-template-areas:
+        "footer-title1 footer-title2 footer-title3"
+        "footer-nav1 footer-nav2 footer-nav3";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-size: small;
 }

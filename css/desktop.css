@@ -1,0 +1,184 @@
+.nav {
+    display: grid;
+    grid-template-areas: "nav-logo nav-accomodations nav-activities nav-register";
+    grid-template-rows: 60px;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    padding-top: 0;
+}
+
+.nav-logo {
+    grid-area: nav-logo;
+    padding-left: 15px;
+}
+
+.nav-logo-img {
+    height: 100%;
+    object-fit: cover;
+    width: auto;
+}
+
+.nav-accomodations {
+    grid-area: nav-accomodations;
+    text-align: center;
+    line-height: 50px;
+    font-size: medium;
+    border-top: solid;
+    border-bottom: none;
+    color: #0065fc;
+}
+
+.nav-activities {
+    grid-area: nav-activities;
+    text-align: center;
+    line-height: 50px;
+    font-size: medium;
+    border-bottom: none;
+    color: black;
+    margin-top: 4px;
+}
+
+.nav-register {
+    grid-area: nav-register;
+    text-align: center;
+    padding-right: 20px;
+    line-height: 50px;
+    color: #0065fc;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "main-header main-header"
+        "accomodations popular"
+        "activities activities";
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-header-form-div {
+    padding-bottom: 30px;
+    width: auto;
+}
+
+.main-header-form-input {
+    width: calc(25% - 100px);
+}
+
+.main-header-form-div-button {
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc;
+    color: white;
+    width: auto;
+    padding: 0 10px;
+}
+
+.search-icon {
+    display: none !important;
+}
+
+.main-header-search-span {
+    display: contents;
+}
+
+.main-header-form-p1 {
+    display: inline;
+    padding-right: 10px;
+}
+
+#accomodations {
+    grid-area: accomodations;
+    display: grid;
+    grid-template-areas:
+        "accomodations-header accomodations-header accomodations-header"
+        "accomodations-link1 accomodations-link2 accomodations-link3"
+        "accomodations-link4 accomodations-link5 accomodations-link6"
+        "accomodations-link7 accomodations-link7 accomodations-link7";
+    grid-template-rows: auto repeat(2, 195px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.accomodations-fig {
+    background-color: white;
+}
+
+.accomodations-link7 {
+    grid-area: accomodations-link7;
+    font-size: 1.6em;
+    color: black;
+}
+
+#popular {
+    grid-area: popular;
+    display: grid;
+    grid-template-areas:
+        "popular-header"
+        "popular-link1"
+        "popular-link2"
+        "popular-link3";
+    grid-gap: 40px;
+    padding: 40px 40px 40px 40px;
+    grid-template-rows: auto repeat(3, 140px);
+    grid-template-columns: 1fr;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+#activities {
+    grid-area: activities;
+    display: grid;
+    grid-template-areas:
+        "activities-header activities-header activities-header activities-header"
+        "activities-link1 activities-link2 activities-link4 activities-link5"
+        "activities-link1 activities-link3 activities-link4 activities-link6";
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-rows: auto repeat(2, 220px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.activities-header {
+    grid-area: activities-header;
+}
+
+.activities-link1 {
+    grid-area: activities-link1;
+}
+
+.activities-link2 {
+    grid-area: activities-link2;
+}
+
+.activities-link3 {
+    grid-area: activities-link3;
+}
+
+.activities-link4 {
+    grid-area: activities-link4;
+}
+
+.activities-link5 {
+    grid-area: activities-link5;
+}
+
+.activities-link6 {
+    grid-area: activities-link6;
+}
+
+#footer {
+    display: grid;
+    grid-template-areas:
+        "footer-title1 footer-title2 footer-title3"
+        "footer-nav1 footer-nav2 footer-nav3";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-size: small;
+}
