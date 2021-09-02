@@ -159,11 +159,16 @@ main {
     grid-template-areas:
         "activities-header activities-header activities-header activities-header"
         "activities-link1 activities-link2 activities-link4 activities-link5"
+        "activities-link1 activities-link2 activities-link4 activities-link6"
         "activities-link1 activities-link3 activities-link4 activities-link6";
     grid-gap: 20px;
     padding: 20px;
-    grid-template-rows: auto repeat(2, 220px);
+    grid-template-rows: auto 220px 20px 220px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.activities-fig-title {
+    text-align: left;
 }
 
 .activities-header {
