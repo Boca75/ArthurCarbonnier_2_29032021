@@ -1,3 +1,7 @@
+body {
+    padding: 0 20px;
+}
+
 .nav {
     display: grid;
     grid-template-areas: "nav-logo nav-accomodations nav-activities nav-register";
@@ -54,7 +58,7 @@ main {
         "main-header main-header"
         "accomodations popular"
         "activities activities";
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -129,6 +133,24 @@ main {
     grid-template-columns: 1fr;
     background-color: #f2f2f2;
     border-radius: 15px;
+}
+
+.popular-fig2 {
+    display: flex !important;
+}
+
+.popular-fig-img2 {
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.popular-figcaption2 {
+    width: 60%;
+    position: relative;
+    padding: 5px 0 0 15px;
+    height: 100%;
 }
 
 #activities {
