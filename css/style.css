@@ -233,13 +233,6 @@ main {
     font-size: 1.3rem;
 }
 
-.popular-link {
-    height: 100%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px silver;
-}
-
 .popular-link1 {
     grid-area: popular-link1;
 }
@@ -256,6 +249,9 @@ main {
     display: flex;
     height: 100%;
     padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px silver;
+    background-color: white;
 }
 
 .popular-fig-img {
@@ -268,7 +264,7 @@ main {
 .popular-figcaption {
     width: 60%;
     position: relative;
-    padding: 5px 0 0 15px;
+    padding: 5px 15px;
 }
 
 .popular-fig-title {
@@ -310,14 +306,11 @@ main {
     font-size: 1.3rem;
 }
 
-.accomodations-link {
-    border-radius: 15px;
-    box-shadow: 0 5px 10px silver;
-    padding: 5px;
-}
-
 .accomodations-fig {
     height: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px silver;
 }
 
 .accomodations-fig-img {
@@ -329,7 +322,7 @@ main {
 .accomodations-figcaption {
     position: relative;
     height: 75px;
-    padding: 5px 0 0 10px;
+    padding: 5px 10px;
     color: black;
 }
 
@@ -403,13 +396,10 @@ main {
     font-size: 1.3rem;
 }
 
-.activities-link {
-    border-radius: 15px;
-    box-shadow: 0 5px 10px silver;
-}
-
 .activities-fig {
     height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px silver;
 }
 
 .activities-fig-img {
